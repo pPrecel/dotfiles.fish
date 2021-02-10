@@ -1,0 +1,24 @@
+curl
+watch
+htop
+neofetch
+bat
+nmap
+fzf
+tmux
+unrar
+lsd
+go
+rust
+node
+python
+hyperkit
+--cask iterm2
+--cask fork
+--cask visual-studio-code
+--cask gimp
+--cask spotify
+kubernetes-cli
+k3d
+kind
+kustomize

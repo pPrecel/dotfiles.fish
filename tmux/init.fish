@@ -1,3 +1,12 @@
 #!/usr/bin/env fish
 
-cp "$argv[1]/tmux/tmux.fish" "$argv[2]/conf.d/tmux.fish"
+source $argv[1]/scripts/common.fish
+
+if test -d ~/.tmux/plugins/tpm
+    info_installation_skipped 'tpm'
+else
+    git clone -q https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+    info_installation_complete 'tpm'
+end
+
+copyWithBackup $argv[1]/tmux/.tmux.conf $HOME/.tmux.conf

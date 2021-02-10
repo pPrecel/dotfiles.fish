@@ -5,22 +5,7 @@
 set DOTFILES_ROOT (pwd -P)
 set FISH_CONFIG "$HOME/.config/fish"
 
-function info
-	echo [(set_color --bold blue) ' .. ' (set_color normal)] $argv
-end
-
-function ask
-	echo [(set_color --bold yellow) ' ?? ' (set_color normal)] $argv
-end
-
-function success
-	echo [(set_color --bold green) ' OK ' (set_color normal)] $argv
-end
-
-function abort
-	echo [(set_color --bold red) ABRT (set_color normal)] $argv
-	exit 1
-end
+source $DOTFILES_ROOT/scripts/common.fish
 
 function config_git
 	if test -z (git config --global --get user.email)
@@ -40,13 +25,42 @@ function config_git
 		or abort 'failed to setup git user name and email'
 end
 
-curl -sL git.io/fisher | source && fisher install jorgebucaran/fisher >/dev/null
-	and success 'fisher'
-	or abort 'fisher'
+function install_fisher
+	if type -q 'fisher'
+		info_installation_skipped 'fisher'
+	else
+		curl -sL git.io/fisher | source && fisher install jorgebucaran/fisher >/dev/null
+		info_installation_complete 'fisher'
+	end
+end
+
+function brew_install
+	while read -la line
+		if brew ls --versions $line >/dev/null
+			info_installation_skipped $line
+		else
+			brew install $line -q
+			info_installation_complete $line
+		end
+	end < $DOTFILES_ROOT/scripts/brew_list
+end
+
+type -q fish
+	or abort "Instal 'fish' first"
+type -q brew
+	or abort "Install 'brew' first"
 
 config_git 
 	and success 'git'
 	or abort 'git'
+
+brew_install
+	and success 'brew'
+	or abort 'brew'
+
+install_fisher
+	and success 'fisher'
+	or abort 'fisher'
 
 for init in */init.fish
 	fish $init $DOTFILES_ROOT $FISH_CONFIG
