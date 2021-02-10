@@ -46,9 +46,10 @@ function brew_install
 end
 
 type -q fish
-	or abort "Instal 'fish' first"
-type -q brew
-	or abort "Install 'brew' first"
+	and type -q brew
+	and type -q git
+	and type -q vim
+	or abort "Instal 'fish', 'git', 'vim' and 'brew' first"
 
 config_git 
 	and success 'git'

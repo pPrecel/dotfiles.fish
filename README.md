@@ -3,6 +3,7 @@ This repo contains my dotfiles based on dotfiles made by [caarlos0](https://gith
 
 # Prerequisites
 
+- git
 - fish
 - brew
 - vim

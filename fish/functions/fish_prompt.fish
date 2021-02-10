@@ -9,7 +9,7 @@ function fish_prompt
     end
 
     if test $last_status -eq 0
-        echo -n (set_color blue)(prompt_pwd)' '
+        echo -n (set_color green)(prompt_pwd)' '
     else
         echo -n (set_color red)(prompt_pwd)' '
     end
