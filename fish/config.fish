@@ -3,7 +3,7 @@
 # disable greeting
 set fish_greeting
 
-set GOPATH ~/go
+set -gx GOPATH ~/go
 
 set PATH $PATH $GOPATH/bin
 set PATH $PATH ~/google-cloud-sdk/bin
