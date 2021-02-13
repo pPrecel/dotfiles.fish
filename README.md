@@ -15,4 +15,6 @@ To upgrade dotfiles type `git pull origin main` and then re-install all dotfiles
 
 # Preview
 
-![console](docs/terminal_view.png)
+![iterm](docs/iterm.png)
+
+![vscode](docs/vscode.png)
