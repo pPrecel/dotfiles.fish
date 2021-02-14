@@ -1,16 +1,14 @@
 {
+    "window.zoomLevel": 1,
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "DejaVuSansMono Nerd Font",
+    "terminal.integrated.fontFamily": "RobotoMono Nerd Font",
+    "workbench.editorAssociations": [],
     "workbench.editor.tabSizing": "shrink",
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.closeOnFileDelete": true,
     "workbench.editor.enablePreview": false,
-    "diffEditor.ignoreTrimWhitespace": false,
-    "python.jediEnabled": false,
-    "editor.fontFamily": "DejaVuSansMono Nerd Font",
-    "terminal.integrated.fontFamily": "RobotoMono Nerd Font",
-    "python.languageServer": "Microsoft",
-    "workbench.editorAssociations": [],
-    "window.zoomLevel": 1,
     "workbench.fontAliasing": "antialiased",
     "workbench.iconTheme": "vs-nomo-dark",
     "workbench.colorCustomizations": {
@@ -51,5 +49,9 @@
         "terminal.ansiBrightCyan": "#26c6da",
         "terminal.ansiWhite": "#bab7b7",
         "terminal.ansiBrightWhite": "#ffffff"
-    }
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "kite.showWelcomeNotificationOnStartup": false,
+    "python.jediEnabled": false,
+    "python.languageServer": "Microsoft"
 }
