@@ -8,7 +8,6 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.closeOnFileDelete": true,
-    "workbench.editor.enablePreview": false,
     "workbench.fontAliasing": "antialiased",
     "workbench.iconTheme": "vs-nomo-dark",
     "workbench.colorCustomizations": {
@@ -53,5 +52,6 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "kite.showWelcomeNotificationOnStartup": false,
     "python.jediEnabled": false,
-    "python.languageServer": "Microsoft"
+    "python.languageServer": "Microsoft",
+    "workbench.editor.enablePreview": false
 }

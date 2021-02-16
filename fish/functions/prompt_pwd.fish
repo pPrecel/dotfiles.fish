@@ -3,7 +3,6 @@
 function prompt_pwd --description "Print the current working directory, shortened to fit the prompt"
     if git rev-parse --git-dir > /dev/null ^ /dev/null
         set -l rootpath (basename (git rev-parse --show-toplevel))
-
         echo -n (basename $rootpath)(__repo_path)' '(__prompt_git_info)
     else
         set -l realhome ~
@@ -19,7 +18,7 @@ function __repo_path
 end
 
 function __prompt_git_info    
-    set -l branch (git rev-parse --abbrev-ref HEAD)
+    set -l branch (git rev-parse --abbrev-ref HEAD ^ /dev/null)
     set -l git_status (git status --porcelain)
 
     set -l prompt_sufix "✓"
