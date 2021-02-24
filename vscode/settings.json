@@ -49,9 +49,20 @@
         "terminal.ansiWhite": "#bab7b7",
         "terminal.ansiBrightWhite": "#ffffff"
     },
+
+    "go.lintOnSave": "off",
+    "go.vetOnSave": "package",
+    "go.buildOnSave": "off", 
+    "go.testOnSave": false,
+    "go.autocompleteUnimportedPackages": true, 
+    "go.useLanguageServer": true,
+    "go.testFlags": [
+        "-v",
+        "--race"
+    ],
+    "go.formatTool": "goimports",
+
     "diffEditor.ignoreTrimWhitespace": false,
-    "kite.showWelcomeNotificationOnStartup": false,
-    "python.jediEnabled": false,
     "python.languageServer": "Microsoft",
     "workbench.editor.enablePreview": false
 }
