@@ -6,6 +6,7 @@
     "workbench.editorAssociations": [],
     "workbench.editor.tabSizing": "shrink",
     "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.enablePreview": false,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.closeOnFileDelete": true,
     "workbench.fontAliasing": "antialiased",
@@ -63,6 +64,5 @@
     "go.formatTool": "goimports",
 
     "diffEditor.ignoreTrimWhitespace": false,
-    "python.languageServer": "Microsoft",
-    "workbench.editor.enablePreview": false
+    "python.languageServer": "Microsoft"
 }
