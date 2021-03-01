@@ -3,7 +3,7 @@
 # disable greeting
 set fish_greeting
 
-set -gx GOPATH ~/go
+set -gx GOPATH "$HOME/go"
 
 set -g fish_user_paths $fish_user_paths "$GOPATH/bin"
 set -g fish_user_paths $fish_user_paths "$HOME/google-cloud-sdk/bin"
