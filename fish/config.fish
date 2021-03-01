@@ -6,8 +6,8 @@ set fish_greeting
 set -gx GOPATH ~/go
 
 set -g fish_user_paths $fish_user_paths "$GOPATH/bin"
-set -g fish_user_paths $fish_user_paths "~/google-cloud-sdk/bin"
-set -g fish_user_paths $fish_user_paths "~/Library/Python/3.7/bin"
+set -g fish_user_paths $fish_user_paths "$HOME/google-cloud-sdk/bin"
+set -g fish_user_paths $fish_user_paths "$HOME/Library/Python/3.7/bin"
 set -g fish_user_paths $fish_user_paths "/opt/metasploit-framework/bin"
 set -g fish_user_paths $fish_user_paths "/usr/local/opt/tcl-tk/bin" 
 
