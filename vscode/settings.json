@@ -64,5 +64,8 @@
     "go.formatTool": "goimports",
 
     "diffEditor.ignoreTrimWhitespace": false,
-    "python.languageServer": "Microsoft"
+    "python.languageServer": "Microsoft",
+    "vs-kubernetes": {
+        "vscode-kubernetes.minikube-path.mac": "/Users/i517616/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
+    }
 }
