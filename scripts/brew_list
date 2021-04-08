@@ -9,6 +9,7 @@ tmux
 unrar
 lsd
 go
+golangci-lint
 rust
 node
 python

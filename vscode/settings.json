@@ -3,7 +3,12 @@
     "files.autoSave": "afterDelay",
     "editor.fontFamily": "DejaVuSansMono Nerd Font",
     "terminal.integrated.fontFamily": "RobotoMono Nerd Font",
-    "workbench.editorAssociations": [],
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
     "workbench.editor.tabSizing": "shrink",
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.enablePreview": false,
@@ -67,5 +72,7 @@
     "python.languageServer": "Microsoft",
     "vs-kubernetes": {
         "vscode-kubernetes.minikube-path.mac": "/Users/i517616/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
-    }
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "explorer.confirmDelete": false
 }
