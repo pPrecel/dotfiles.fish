@@ -1,0 +1,21 @@
+name: Test macOS integration
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: Full scenario
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install requirements
+        run: |
+          brew install vim git fish
+      - name: Bootstrap
+        run: |
+          fish scripts/bootstrap.fish
+      
