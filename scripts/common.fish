@@ -25,6 +25,10 @@ function abort
 	exit 1
 end
 
+function abort_installation
+    abort "Installation aborted for '$argv'"
+end
+
 function copyFishFolder
     set from $argv[1]
     set to $argv[2]

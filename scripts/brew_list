@@ -6,7 +6,7 @@ bat
 nmap
 fzf
 tmux
-unrar
+rar
 lsd
 go
 golangci-lint

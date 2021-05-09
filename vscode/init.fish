@@ -16,5 +16,5 @@ copyWithBackup "$argv[1]/vscode/settings.json" "$HOME/Library/Application Suppor
 cat $argv[1]/vscode/extensions | while read line
     code --install-extension "$line" >/dev/null
         and info_installation_complete "$line"
-        or abort "$line"
+        or abort_installation "$line"
 end

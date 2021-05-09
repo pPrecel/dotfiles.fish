@@ -1,4 +1,4 @@
-name: Test macOS integration
+name: macOS integration
 
 on:
   push:
@@ -12,8 +12,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Install requirements
+      - name: Install pre-requirements
         run: |
+          brew update
           brew install vim git fish
           git config --global user.name testname
           git config --global user.email testmail

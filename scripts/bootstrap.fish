@@ -40,6 +40,7 @@ function brew_install
 			info_installation_skipped $line
 		else
 			brew install $line -q
+				or abort_installation $line
 			info_installation_complete $line
 		end
 	end < $DOTFILES_ROOT/scripts/brew_list

@@ -1,3 +1,5 @@
+![main pipeline badge](https://github.com/pPrecel/dotfiles.fish/actions/workflows/macOS.yml/badge.svg)
+
 # dotfiles.fish
 
 This repo contains my dotfiles based on dotfiles made by [caarlos0](https://github.com/caarlos0/dotfiles.fish)
