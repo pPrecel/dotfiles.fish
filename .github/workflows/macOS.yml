@@ -16,6 +16,7 @@ jobs:
         run: |
           brew update
           brew install vim git fish
+          brew remove go@1.15
           git config --global user.name testname
           git config --global user.email testmail
       - name: Bootstrap
