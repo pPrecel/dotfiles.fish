@@ -56,7 +56,10 @@
         "terminal.ansiBrightWhite": "#ffffff"
     },
 
-    "go.lintOnSave": "off",
+    "go.lintTool": "golangci-lint",
+    "go.lintFlags": [
+        "--fast"
+    ],
     "go.vetOnSave": "package",
     "go.buildOnSave": "off", 
     "go.testOnSave": false,
