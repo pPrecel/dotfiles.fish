@@ -1,29 +1,30 @@
-![main pipeline badge](https://github.com/pPrecel/dotfiles.fish/actions/workflows/macOS.yml/badge.svg)
+# dotfiles.fish #
 
-# dotfiles.fish
+[![main pipeline badge](https://github.com/pPrecel/dotfiles.fish/actions/workflows/macOS.yml/badge.svg)](https://github.com/pPrecel/dotfiles.fish/actions)
+[![license](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://github.com/pPrecel/dotfiles.fish/blob/main/LICENSE)
 
 This repo contains my dotfiles based on dotfiles made by [caarlos0](https://github.com/caarlos0/dotfiles.fish)
 
-## Prerequisites
+## Prerequisites ##
 
 - git
 - fish
 - brew
 - vim
 
-## Installation
+## Installation ##
 
 To install all dotfiles you have only to run `./scripts/bootstrap.fish` ( or `fish ./scripts/bootstrap.fish`).
 
 To upgrade dotfiles type `git pull origin main` and then re-install all dotfiles.
 
-## Preview
+## Preview ##
 
 ![iterm](docs/iterm.png)
 
 ![vscode](docs/vscode.png)
 
-## Slack integration
+## Slack integration ##
 
 Slack colors:
 
