@@ -3,12 +3,9 @@
     "files.autoSave": "afterDelay",
     "editor.fontFamily": "DejaVuSansMono Nerd Font",
     "terminal.integrated.fontFamily": "RobotoMono Nerd Font",
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
-        }
-    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
     "workbench.editor.tabSizing": "shrink",
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.enablePreview": false,
