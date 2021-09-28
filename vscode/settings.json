@@ -1,5 +1,4 @@
 {
-    "window.zoomLevel": 1,
     "files.autoSave": "afterDelay",
     "editor.fontFamily": "DejaVuSansMono Nerd Font",
     "terminal.integrated.fontFamily": "RobotoMono Nerd Font",
@@ -74,5 +73,6 @@
         "vscode-kubernetes.minikube-path.mac": "/Users/i517616/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
     },
     "go.toolsManagement.autoUpdate": true,
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "window.zoomLevel": 1
 }

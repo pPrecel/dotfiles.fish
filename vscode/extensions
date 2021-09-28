@@ -11,10 +11,14 @@ matklad.rust-analyzer
 ms-azuretools.vscode-docker
 ms-kubernetes-tools.vscode-kubernetes-tools
 ms-python.python
+ms-python.vscode-pylance
 ms-toolsai.jupyter
+ms-toolsai.jupyter-keymap
 ms-vscode.vscode-typescript-tslint-plugin
+redhat.vscode-commons
 redhat.vscode-yaml
 rust-lang.rust
 XadillaX.viml
 ZainChen.json
 znck.grammarly
+zxh404.vscode-proto3
