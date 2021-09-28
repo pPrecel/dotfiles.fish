@@ -5,6 +5,8 @@ set fish_greeting
 
 set -gx GOPATH "$HOME/go"
 
+set -gx KCPCONFIG "$HOME/.kcp/config-prod.yaml"
+
 set -g fish_user_paths $fish_user_paths "$GOPATH/bin"
 set -g fish_user_paths $fish_user_paths "$HOME/google-cloud-sdk/bin"
 set -g fish_user_paths $fish_user_paths "$HOME/Library/Python/3.7/bin"
