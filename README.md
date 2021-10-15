@@ -1,7 +1,8 @@
 # dotfiles.fish #
 
-[![main pipeline badge](https://github.com/pPrecel/dotfiles.fish/actions/workflows/macOS.yml/badge.svg)](https://github.com/pPrecel/dotfiles.fish/actions)
-[![license](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://github.com/pPrecel/dotfiles.fish/blob/main/LICENSE)
+[![main pipeline badge](https://img.shields.io/github/workflow/status/pPrecel/dotfiles.fish/macOS%20integration?label=macOS%20integration&style=for-the-badge)](https://github.com/pPrecel/dotfiles.fish/actions)
+[![license](https://img.shields.io/badge/License-MIT-brightgreen.svg?style=for-the-badge)](https://github.com/pPrecel/dotfiles.fish/blob/main/LICENSE)
+[![Fish Shell Version](https://img.shields.io/badge/fish-≥v3.1.2-brightgreen?style=for-the-badge)](http://fishshell.com)
 
 This repo contains my dotfiles based on dotfiles made by [caarlos0](https://github.com/caarlos0/dotfiles.fish)
 
@@ -14,9 +15,9 @@ This repo contains my dotfiles based on dotfiles made by [caarlos0](https://gith
 
 ## Installation ##
 
-To install all dotfiles you have only to run `./scripts/bootstrap.fish` ( or `fish ./scripts/bootstrap.fish`).
+To install all dotfiles you have only to run `./scripts/bootstrap.fish` ( or `fish ./scripts/bootstrap.fish` ).
 
-To upgrade dotfiles type `git pull origin main` and then re-install all dotfiles.
+To upgrade dotfiles, type the `git pull origin main` and then re-install all dotfiles.
 
 ## Preview ##
 
