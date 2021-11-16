@@ -66,13 +66,17 @@
         "--race"
     ],
     "go.formatTool": "goimports",
+    "go.toolsManagement.autoUpdate": true,
+    "go.enableCodeLens": {
+        "references": true
+    },
 
     "diffEditor.ignoreTrimWhitespace": false,
-    "python.languageServer": "Microsoft",
+    "diffEditor.codeLens": true,
+    "python.languageServer": "Default",
     "vs-kubernetes": {
         "vscode-kubernetes.minikube-path.mac": "/Users/i517616/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
     },
-    "go.toolsManagement.autoUpdate": true,
     "explorer.confirmDelete": false,
     "window.zoomLevel": 1
 }
