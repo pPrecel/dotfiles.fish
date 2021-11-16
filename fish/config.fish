@@ -18,6 +18,7 @@ alias ls='lsd'
 set KP $GOPATH/src/github.com/kyma-project
 set KI $GOPATH/src/github.com/kyma-incubator
 set PP $GOPATH/src/github.com/pPrecel
+set GH $GOPATH/src/github.com
 
 # tcl-tk
 set -gx LDFLAGS "-L/usr/local/opt/tcl-tk/lib"
