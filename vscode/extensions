@@ -2,6 +2,7 @@ alefragnani.Bookmarks
 be5invis.vscode-icontheme-nomo-dark
 bmalehorn.vscode-fish
 DavidAnson.vscode-markdownlint
+dgileadi.java-decompiler
 eamodio.gitlens
 golang.go
 jock.svg
@@ -17,10 +18,17 @@ ms-toolsai.jupyter
 ms-toolsai.jupyter-keymap
 ms-toolsai.jupyter-renderers
 ms-vscode.vscode-typescript-tslint-plugin
+redhat.java
 redhat.vscode-commons
 redhat.vscode-yaml
 rust-lang.rust
 usernamehw.errorlens
+VisualStudioExptTeam.vscodeintellicode
+vscjava.vscode-java-debug
+vscjava.vscode-java-dependency
+vscjava.vscode-java-pack
+vscjava.vscode-java-test
+vscjava.vscode-maven
 XadillaX.viml
 ZainChen.json
 znck.grammarly
