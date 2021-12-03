@@ -3,6 +3,9 @@
 # disable greeting
 set fish_greeting
 
+# problem with go race detectorem: https://github.com/golang/go/issues/49138
+set -gx  MallocNanoZone 0
+
 set -gx GOPATH "$HOME/go"
 set -gx KCPCONFIG "$HOME/.kcp/config-dev.yaml"
 

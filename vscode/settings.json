@@ -59,6 +59,9 @@
     "go.vetOnSave": "package",
     "go.buildOnSave": "off", 
     "go.testOnSave": false,
+    "go.testEnvVars": {
+        "MallocNanoZone": 0,
+    },
     "go.autocompleteUnimportedPackages": true, 
     "go.useLanguageServer": true,
     "go.testFlags": [
@@ -86,5 +89,7 @@
         "**/.factorypath": true
     },
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "java.home": "/Library/Java/JavaVirtualMachines/temurin-16.jdk/Contents/Home",
+    "explorer.confirmDragAndDrop": false
 }
