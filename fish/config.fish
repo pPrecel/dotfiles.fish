@@ -8,8 +8,9 @@ set -gx  MallocNanoZone 0
 
 set -gx GOPATH "$HOME/go"
 set -gx KCPCONFIG "$HOME/.kcp/config-dev.yaml"
+set -gx ISTIOCTL_PATH (which istioctl)
 
-set -gx EDITOR=(which vim)
+set -gx EDITOR (which vim)
 
 set -g fish_user_paths $fish_user_paths "$GOPATH/bin"
 set -g fish_user_paths $fish_user_paths "$HOME/google-cloud-sdk/bin"
