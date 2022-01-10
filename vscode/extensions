@@ -7,7 +7,6 @@ dgileadi.java-decompiler
 eamodio.gitlens
 golang.go
 jock.svg
-jpoissonnier.vscode-styled-components
 malmaud.tmux
 matklad.rust-analyzer
 mermade.openapi-lint
@@ -24,6 +23,7 @@ redhat.java
 redhat.vscode-commons
 redhat.vscode-yaml
 rust-lang.rust
+styled-components.vscode-styled-components
 usernamehw.errorlens
 VisualStudioExptTeam.vscodeintellicode
 vscjava.vscode-java-debug
