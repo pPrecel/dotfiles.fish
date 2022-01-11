@@ -19,6 +19,7 @@ set -g fish_user_paths $fish_user_paths "/opt/metasploit-framework/bin"
 set -g fish_user_paths $fish_user_paths "/usr/local/opt/tcl-tk/bin"
 
 alias ls='lsd'
+alias watch='viddy'
 
 set KP $GOPATH/src/github.com/kyma-project
 set KI $GOPATH/src/github.com/kyma-incubator
