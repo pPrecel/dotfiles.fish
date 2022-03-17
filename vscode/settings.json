@@ -81,7 +81,6 @@
         "vscode-kubernetes.minikube-path.mac": "/Users/i517616/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
     },
     "explorer.confirmDelete": false,
-    "window.zoomLevel": 1,
     "files.exclude": {
         "**/.classpath": true,
         "**/.project": true,
@@ -91,5 +90,7 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "java.home": "/Library/Java/JavaVirtualMachines/temurin-16.jdk/Contents/Home",
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "window.zoomLevel": 1,
+    "workbench.statusBar.visible": false
 }
