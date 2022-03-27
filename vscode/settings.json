@@ -92,5 +92,5 @@
     "java.home": "/Library/Java/JavaVirtualMachines/temurin-16.jdk/Contents/Home",
     "explorer.confirmDragAndDrop": false,
     "window.zoomLevel": 1,
-    "workbench.statusBar.visible": false
+    "workbench.statusBar.visible": true
 }
