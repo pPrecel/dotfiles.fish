@@ -7,7 +7,6 @@ eamodio.gitlens
 golang.go
 golang.go-nightly
 malmaud.tmux
-matklad.rust-analyzer
 mermade.openapi-lint
 mhutchie.git-graph
 ms-azuretools.vscode-docker
@@ -20,6 +19,7 @@ plex.vscode-protolint
 redhat.vscode-commons
 redhat.vscode-yaml
 rust-lang.rust
+rust-lang.rust-analyzer
 styled-components.vscode-styled-components
 usernamehw.errorlens
 XadillaX.viml
