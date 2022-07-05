@@ -14,7 +14,6 @@ golangci-lint
 rust
 node
 python
-hyperkit
 --cask iterm2
 --cask fork
 --cask visual-studio-code
