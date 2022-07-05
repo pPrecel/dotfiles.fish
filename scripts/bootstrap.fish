@@ -35,15 +35,20 @@ function install_fisher
 end
 
 function brew_install
+	set -l brew_list ""
 	while read -la line
-		if brew ls --versions $line >/dev/null
-			info_installation_skipped $line
-		else
-			brew install $line -q
-				or abort_installation $line
-			info_installation_complete $line
-		end
+		set brew_list $brew_list $line
 	end < $DOTFILES_ROOT/scripts/brew_list
+
+	for val in $brew_list
+		if brew ls --versions $val >/dev/null
+			info_installation_skipped $val
+		else
+			brew install $val -q
+				or abort_installation $val
+			info_installation_complete $val
+		end
+	end
 end
 
 type -q fish
