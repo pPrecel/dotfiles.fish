@@ -3,9 +3,6 @@
 # disable greeting
 set fish_greeting
 
-# problem with go race detectorem: https://github.com/golang/go/issues/49138
-set -gx  MallocNanoZone 0
-
 set -gx GOPATH "$HOME/go"
 set -gx KCPCONFIG "$HOME/.kcp/config-dev.yaml"
 set -gx ISTIOCTL_PATH (which istioctl)
@@ -17,6 +14,7 @@ set -g fish_user_paths $fish_user_paths "$HOME/google-cloud-sdk/bin"
 set -g fish_user_paths $fish_user_paths "$HOME/Library/Python/3.7/bin"
 set -g fish_user_paths $fish_user_paths "/opt/metasploit-framework/bin"
 set -g fish_user_paths $fish_user_paths "/usr/local/opt/tcl-tk/bin"
+set -g fish_user_paths $fish_user_paths "/opt/homebrew/bin"
 
 alias ls='lsd'
 alias watch='viddy'

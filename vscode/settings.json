@@ -59,9 +59,6 @@
     "go.vetOnSave": "package",
     "go.buildOnSave": "off", 
     "go.testOnSave": false,
-    "go.testEnvVars": {
-        "MallocNanoZone": 0,
-    },
     "go.autocompleteUnimportedPackages": true, 
     "go.useLanguageServer": true,
     "go.testFlags": [
