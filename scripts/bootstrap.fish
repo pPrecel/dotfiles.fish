@@ -35,7 +35,7 @@ function install_fisher
 end
 
 function brew_install
-	set -l brew_list ""
+	set -l brew_list
 	while read -la line
 		set brew_list $brew_list $line
 	end < $DOTFILES_ROOT/scripts/brew_list
