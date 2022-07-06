@@ -17,7 +17,6 @@ jobs:
           brew update
           brew upgrade
           brew install vim git fish
-          brew remove go@1.15
           brew install tmux
           brew install --cask visual-studio-code
           git config --global user.name testname
