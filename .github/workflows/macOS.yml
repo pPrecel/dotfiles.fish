@@ -18,6 +18,7 @@ jobs:
           brew upgrade
           brew install vim git fish
           brew install tmux
+          brew remove $(brew list | grep go@)
           brew install --cask visual-studio-code
           git config --global user.name testname
           git config --global user.email testmail
