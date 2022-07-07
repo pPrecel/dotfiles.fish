@@ -19,9 +19,7 @@ python
 --cask visual-studio-code
 --cask gimp
 --cask spotify
-kubernetes-cli
 k3d
-kind
 kustomize
 bfontaine/utils/rfc
 pPrecel/tap/cloudagent
