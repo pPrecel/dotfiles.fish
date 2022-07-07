@@ -34,6 +34,19 @@ function install_fisher
 	end
 end
 
+function install_krew
+	set -l temp_dir (mktemp -d)
+
+	pushd $temp_dir
+	set -l _OS (uname | tr '[:upper:]' '[:lower:]')
+		and set -l _ARCH (uname -m | sed -e 's/x86_64/amd64/' -e 's/\(arm\)\(64\)\?.*/\1\2/' -e 's/aarch64$/arm64/')
+		and set -l _KREW krew-$_OS"_"$_ARCH
+		and curl -fsSLO "https://github.com/kubernetes-sigs/krew/releases/latest/download/$_KREW.tar.gz"
+		and tar zxvf $_KREW.tar.gz
+		and ./$_KREW install krew
+	popd
+end
+
 function brew_install
 	set -l brew_list
 	while read -la line
@@ -68,6 +81,10 @@ brew_install
 install_fisher
 	and success 'fisher'
 	or abort 'fisher'
+
+install_krew
+	and success 'krew'
+	or abort 'krew'
 
 for init in */init.fish
 	fish $init $DOTFILES_ROOT $FISH_CONFIG
