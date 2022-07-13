@@ -8,10 +8,10 @@ while read -la line
 end < $argv[1]/kubectl/krew_list
 
 for val in $krew_list
-    if ~/.rd/bin/kubectl krew list | grep $val >/dev/null
+    if ~/.krew/bin/kubectl-krew krew list | grep $val >/dev/null
         info_installation_skipped $val
     else
-        ~/.rd/bin/kubectl krew install $val 
+        ~/.krew/bin/kubectl-krew krew install $val 
             or abort_installation $val
         info_installation_complete $val
     end
