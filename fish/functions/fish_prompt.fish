@@ -19,7 +19,7 @@ function __common_prompt
     test "$USER" = 'root'
         and echo -n (set_color (__status_color))'[ # ] '
         or  echo -n (set_color (__status_color))(__status_symbol)' '
-    echo -n (set_color normal)(prompt_pwd)' '
+    echo -n (set_color normal)(__prompt_pwd)' '
 end
 
 function __status_color 
