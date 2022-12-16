@@ -10,4 +10,4 @@ else
     info_installation_complete 'vim-plug'
 end
 
-copyWithBackup $argv[1]/vim/.vimrc $HOME/.vimrc
+lnWithBackup $argv[1]/vim/.vimrc $HOME/.vimrc

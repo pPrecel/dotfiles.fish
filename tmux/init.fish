@@ -9,4 +9,4 @@ else
     info_installation_complete 'tpm'
 end
 
-copyWithBackup $argv[1]/tmux/.tmux.conf $HOME/.tmux.conf
+lnWithBackup $argv[1]/tmux/.tmux.conf $HOME/.tmux.conf

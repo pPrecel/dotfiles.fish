@@ -62,14 +62,12 @@
     "go.autocompleteUnimportedPackages": true, 
     "go.useLanguageServer": true,
     "go.testFlags": [
-        "-v",
-        "--race"
+        "-v"
     ],
     "go.formatTool": "goimports",
     "go.toolsManagement.autoUpdate": true,
-    "go.enableCodeLens": {
-        "references": true
-    },
+    "go.experimentalWorkspaceModule": true,
+    "go.enableCodeLens": {},
 
     "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.codeLens": true,
@@ -88,6 +86,7 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "java.home": "/Library/Java/JavaVirtualMachines/temurin-16.jdk/Contents/Home",
     "explorer.confirmDragAndDrop": false,
-    "window.zoomLevel": 1,
-    "workbench.statusBar.visible": true
+    "workbench.statusBar.visible": true,
+    "redhat.telemetry.enabled": true,
+    "window.zoomLevel": 1
 }

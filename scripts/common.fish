@@ -29,18 +29,18 @@ function abort_installation
     abort "Installation aborted for '$argv'"
 end
 
-function copyFishFolder
+function lnFishFolder
     set from $argv[1]
     set to $argv[2]
 
     cd $from
 
     for file in *.fish
-        copyWithBackup $from/$file $to/$file
+        lnWithBackup $from/$file $to/$file
     end
 end
 
-function copyWithBackup
+function lnWithBackup
     set from $argv[1]
     set to $argv[2]
 

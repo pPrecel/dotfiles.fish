@@ -11,7 +11,7 @@ else
     info_installation_complete "font 'DejaVu Sans Mono Nerd Font Complete.ttf'"
 end
 
-copyWithBackup "$argv[1]/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
+lnWithBackup "$argv[1]/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
 
 cat $argv[1]/vscode/extensions | while read line
     code --install-extension "$line" >/dev/null

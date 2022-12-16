@@ -14,7 +14,7 @@ end
 if test -f ~/Library/"Application Support"/iTerm2/DynamicProfiles/natural-fish.json
     info_installation_skipped "natural-fish.json"
 else
-    copyWithBackup $argv[1]/iterm2/natural-fish.json \
+    lnWithBackup $argv[1]/iterm2/natural-fish.json \
         ~/Library/"Application Support"/iTerm2/DynamicProfiles/natural-fish.json
     info_installation_complete "natural-fish.json"
 end
