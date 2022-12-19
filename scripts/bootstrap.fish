@@ -48,14 +48,21 @@ function install_krew
 end
 
 function brew_install
+	set -l file_name $argv[1]
+	set -l cask $argv[2]
+
 	set -l brew_list
 	while read -la line
 		set brew_list $brew_list $line
-	end < $DOTFILES_ROOT/scripts/brew_list
+	end < $DOTFILES_ROOT/scripts/$file_name
 
 	for val in $brew_list
 		if brew ls --versions $val >/dev/null
 			info_installation_skipped $val
+		else if test "$cask"="true"
+			brew install --cask $val -q
+				or abort_installation $val
+			info_installation_complete $val
 		else
 			brew install $val -q
 				or abort_installation $val
@@ -64,30 +71,47 @@ function brew_install
 	end
 end
 
-type -q fish
+make 'check prerequisites'
+	and type -q fish
 	and type -q brew
 	and type -q git
 	and type -q vim
-	or abort "Instal 'fish', 'git', 'vim' and 'brew' first"
+	and success 'check prerequisites'
+	or abort "Instal 'fish', 'git', 'vim', and 'brew' first"
 
-config_git 
+make 'git'
+    and config_git 
 	and success 'git'
 	or abort 'git'
 
-brew_install
+make 'brew update'
+	and brew update --auto-update -q
+	and success 'brew update'
+	or abort 'brew update'
+
+make 'brew'
+    and brew_install "brew_list"
 	and success 'brew'
 	or abort 'brew'
 
-install_fisher
+make 'brew cask'
+	and brew_install 'brew_list_cask' "true"
+	and success 'brew cask'
+	or abort 'brew cask'
+
+make 'fisher'
+	and install_fisher
 	and success 'fisher'
 	or abort 'fisher'
 
-install_krew
+make 'krew'
+	and install_krew
 	and success 'krew'
 	or abort 'krew'
 
 for init in */init.fish
-	fish $init $DOTFILES_ROOT $FISH_CONFIG
+	make $init
+		and fish $init $DOTFILES_ROOT $FISH_CONFIG
 		and success $init
 		or abort $init
 end

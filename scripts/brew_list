@@ -14,11 +14,6 @@ golangci-lint
 rust
 node
 python
---cask iterm2
---cask fork
---cask visual-studio-code
---cask gimp
---cask spotify
 k3d
 kustomize
 bfontaine/utils/rfc

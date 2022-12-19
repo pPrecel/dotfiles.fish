@@ -1,9 +1,5 @@
 #!/usr/bin/env fish
 
-function info
-	echo [(set_color --bold blue)' .. '(set_color normal)] $argv
-end
-
 function info_installation_complete
     info "Installation complete for '$argv'"
 end
@@ -12,12 +8,20 @@ function info_installation_skipped
     info "Installation skipped for '$argv'"
 end
 
+function info
+	echo [(set_color --bold blue)' .. '(set_color normal)] $argv
+end
+
 function ask
 	echo [(set_color --bold yellow)' ?? '(set_color normal)] $argv
 end
 
+function make
+    echo [(set_color --bold blue)'MAKE'(set_color normal)] $argv
+end
+
 function success
-	echo [(set_color --bold green)' OK '(set_color normal)] $argv
+	echo [(set_color --bold green)'DONE'(set_color normal)] $argv
 end
 
 function abort
