@@ -15,7 +15,6 @@ jobs:
       - name: Install pre-requirements
         run: |
           brew update
-          brew upgrade
           brew install vim git fish
           brew install tmux
           brew remove $(brew list | grep go@)
