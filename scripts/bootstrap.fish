@@ -59,7 +59,7 @@ function brew_install
 	for val in $brew_list
 		if brew ls --versions $val >/dev/null
 			info_installation_skipped $val
-		else if test "$cask"="true"
+		else if test -n "$cask"
 			brew install --cask $val -q
 				or abort_installation $val
 			info_installation_complete $val
