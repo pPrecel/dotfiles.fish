@@ -6,6 +6,9 @@ neofetch
 bat
 nmap
 fzf
+jq
+yq
+xq
 fd
 ripgrep
 lazydocker
