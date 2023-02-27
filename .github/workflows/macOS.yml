@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Install pre-requirements
+      - name: Prerequisites
         run: |
           brew update
           brew install vim git fish
