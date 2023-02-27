@@ -6,6 +6,13 @@ neofetch
 bat
 nmap
 fzf
+fd
+ripgrep
+lazydocker
+diff-so-fancy
+colordiff
+tldr
+ncdu
 tmux
 rar
 lsd
@@ -16,5 +23,6 @@ node
 python
 k3d
 kustomize
+istioctl
 bfontaine/utils/rfc
 pPrecel/tap/cloudagent

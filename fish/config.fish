@@ -19,7 +19,12 @@ set -g fish_user_paths $fish_user_paths "$HOME/.rd/bin"
 set -g fish_user_paths $fish_user_paths "$HOME/.krew/bin"
 
 alias ls='lsd'
+alias grep='rg'
+alias find='fd'
+alias du='ncdu'
+alias man='tldr'
 alias watch='viddy'
+alias diff='colordiff'
 
 set KP $GOPATH/src/github.com/kyma-project
 set KI $GOPATH/src/github.com/kyma-incubator
@@ -64,3 +69,11 @@ set -g fish_pager_color_progress brwhite --background=cyan
 set -g fish_pager_color_prefix white --bold --underline
 set -g fish_pager_color_completion normal
 set -g fish_pager_color_description $latte yellow
+
+# Run the tmux and exit when it's session is ended
+if status is-interactive 
+and not set -q TMUX
+    exec tmux
+end
+
+exit
