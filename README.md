@@ -19,6 +19,11 @@ To install all dotfiles you have only to run `./scripts/bootstrap.fish` ( or `fi
 
 To upgrade dotfiles, type the `git pull origin main` and then re-install all dotfiles.
 
+## Post-Installation ##
+
+- [Make fish your default shell](https://fishshell.com/docs/3.0/faq.html#faq-default).
+- [Switch the iTerm profile](https://apple.stackexchange.com/a/388566) to the `natural-fish` and make it default one.
+
 ## Preview ##
 
 ![iterm](docs/iterm.png)
