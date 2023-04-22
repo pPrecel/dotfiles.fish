@@ -11,3 +11,5 @@ else
 end
 
 lnWithBackup $argv[1]/vim/.vimrc $HOME/.vimrc
+
+lnWithBackup $argv[1]/vim/init.vim $HOME/.config/nvim/init.vim

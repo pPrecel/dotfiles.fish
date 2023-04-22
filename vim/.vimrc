@@ -14,7 +14,6 @@ call plug#end()
 
 " Enable mouse in vim
 set mouse=a
-set ttymouse=sgr
 
 " Show status bar
 set laststatus=2
@@ -22,8 +21,6 @@ set laststatus=2
 set number relativenumber
 
 set updatetime=500
-
-set balloondelay=250
 
 autocmd! BufEnter,BufNewFile *.go syntax on
 autocmd! BufLeave *.go syntax off
