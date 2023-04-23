@@ -14,6 +14,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Prerequisites
         run: |
+          echo "brew configuration"
+          echo $(brew list)
           brew update
           brew install vim git fish
           brew install tmux
