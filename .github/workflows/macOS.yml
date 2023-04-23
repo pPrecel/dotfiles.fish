@@ -20,6 +20,8 @@ jobs:
           brew install vim git fish
           brew install tmux
           brew remove go
+          rm /usr/local/bin/go
+          rm /usr/local/bin/gofmt
           brew install --cask visual-studio-code
           git config --global user.name testname
           git config --global user.email testmail
