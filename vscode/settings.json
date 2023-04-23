@@ -88,5 +88,8 @@
     "explorer.confirmDragAndDrop": false,
     "workbench.statusBar.visible": true,
     "redhat.telemetry.enabled": true,
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "[python]": {
+        "editor.formatOnType": true
+    }
 }
