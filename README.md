@@ -1,4 +1,4 @@
-# dotfiles.fish #
+# `dotfiles.fish`
 
 [![main pipeline badge](https://img.shields.io/github/actions/workflow/status/pPrecel/dotfiles.fish/macOS.yml?branch=main&label=macOS%20integration&style=for-the-badge)](https://github.com/pPrecel/dotfiles.fish/actions)
 [![license](https://img.shields.io/badge/License-MIT-brightgreen.svg?style=for-the-badge)](https://github.com/pPrecel/dotfiles.fish/blob/main/LICENSE)
@@ -6,31 +6,31 @@
 
 This repo contains my dotfiles based on dotfiles made by [caarlos0](https://github.com/caarlos0/dotfiles.fish)
 
-## Prerequisites ##
+## Prerequisites
 
 - git
 - fish
 - brew
 - vim
 
-## Installation ##
+## Installation
 
 To install all dotfiles you have only to run `./scripts/bootstrap.fish` ( or `fish ./scripts/bootstrap.fish` ).
 
 To upgrade dotfiles, type the `git pull origin main` and then re-install all dotfiles.
 
-## Post-Installation ##
+## Post-Installation
 
 - [Make fish your default shell](https://fishshell.com/docs/3.0/faq.html#faq-default).
-- [Switch the iTerm profile](https://apple.stackexchange.com/a/388566) to the `natural-fish` and make it a default one.
+- [Switch the iTerm profile](https://apple.stackexchange.com/a/388566) to `natural-fish` and make it a default one.
 
-## Preview ##
+## Preview
 
-![iterm](docs/iterm.png)
+![terminal](docs/iterm.png)
 
-![vscode](docs/vscode.png)
+![ide](docs/vscode.png)
 
-## Slack integration ##
+## Slack integration
 
 Slack colors:
 
