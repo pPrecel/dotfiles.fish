@@ -1,7 +1,8 @@
 {
     "files.autoSave": "afterDelay",
-    "editor.fontFamily": "DejaVuSansMono Nerd Font",
-    "terminal.integrated.fontFamily": "RobotoMono Nerd Font",
+    "editor.fontFamily": "DejaVuSansMNF",
+    "terminal.integrated.fontFamily": "RobotoMonoNF-Rg",
+    "workbench.colorTheme": "Visual Studio Dark",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter.notebook.ipynb"
     },
@@ -13,26 +14,79 @@
     "workbench.fontAliasing": "antialiased",
     "workbench.iconTheme": "vs-nomo-dark",
     "workbench.colorCustomizations": {
-        "statusBar.background": "#292929",
+        
+        // side panel
         "sideBar.background": "#3b3d39",
+        "sideBar.foreground": "#d4d4d4",
+        "sideBarTitle.foreground": "#BBBBBB",
         "sideBarSectionHeader.border": "#567d36",
+        "sideBarSectionHeader.background": "#3b3d39",
+        "sideBarSectionHeader.foreground": "#d4d4d4",
         "activityBar.background": "#567d36",
         "activityBar.foreground": "#000000",
+        "activityBar.inactiveForeground": "#414141",
+        "activityBar.activeFocusBorder": "#ffa112",
         "activityBar.activeBackground": "#567d36",
         "activityBar.activeBorder": "#ffa112",
+        "activityBar.dropBorder": "#414141",
+        
+        // top panel
+        "focusBorder": "#567d36",
+        "commandCenter.foreground": "#567d36",
+        
+        // editor
+        "tab.activeBorder": "#567d36",
+        "tab.activeBackground": "#2c2c2c",
+        "tab.hoverBackground": "#567d36",
+        "tab.hoverForeground": "#d4d4d4",
+        "tab.activeForeground": "#ffffff",
+        "tab.lastPinnedBorder": "#ccc3",
+        "tab.inactiveBackground": "#262626",
+        "tab.inactiveForeground": "#ffffff",
+
+        "breadcrumb.background": "#262626",
+        "breadcrumb.foreground": "#bab7b7",
+        "breadcrumb.focusForeground": "#ffffff",
+        
+        "minimap.selectionHighlight": "#ffa112",
+        "editor.background": "#262626",
+        "editor.foreground": "#D4D4D4",
+        "editor.inactiveSelectionBackground": "#3A3D41",
+        "editor.selectionHighlightBackground": "#ADD6FF26",
+        "editorIndentGuide.activeBackground": "#707070",
+        "editorIndentGuide.background": "#404040",
+
+        "activityBarBadge.background": "#1c7a82",
+        "activityBarBadge.foreground": "#ffffff",
+
+        "badge.background": "#535353",
+        "badge.foreground": "#ffffff",
+
+        "widget.border": "#313030",
+
+        // text
         "input.border": "#567d36",
         "input.background": "#3b3d39",
-        "focusBorder": "#567d36",
-        "tab.activeBorderTop": "#567d36",
-        "tab.activeBorder": "#567d36",
+        "input.foreground": "#d4d4d4",
+        "input.placeholderForeground": "#A6A6A6",
         "button.background": "#567d36",
         "checkbox.background": "#567d36",
+        "checkbox.border": "#6B6B6B",
+        "list.activeSelectionIconForeground": "#FFF",
+        "list.dropBackground": "#383B3D",
         "list.activeSelectionBackground": "#567d36",
         "list.focusBackground": "#567d36",
         "list.hoverBackground": "#567d36",
         "list.inactiveSelectionBackground": "#434343",
-        "minimap.selectionHighlight": "#ffa112",
-        "editor.background": "#262626",
+
+        // bottom panel
+        "statusBar.background": "#292929",
+        "statusBar.foreground": "#d4d4d4",
+        "statusBarItem.remoteForeground": "#FFF",
+        "statusBarItem.remoteBackground": "#1c7a82",
+
+        "terminal.background": "#2c2c2c",
+        "terminal.inactiveSelectionBackground": "#3A3D41",
 
         "terminal.ansiBlack": "#2c2c2c",
         "terminal.ansiBrightBlack": "#535353",
@@ -49,7 +103,14 @@
         "terminal.ansiCyan": "#1c7a82",
         "terminal.ansiBrightCyan": "#26c6da",
         "terminal.ansiWhite": "#bab7b7",
-        "terminal.ansiBrightWhite": "#ffffff"
+        "terminal.ansiBrightWhite": "#ffffff",
+
+        // other
+        "menu.background": "#252526",
+        "menu.border": "#454545",
+        "menu.foreground": "#CCCCCC",
+        "menu.separatorBackground": "#454545",
+        "ports.iconRunningProcessForeground": "#09ff00"
     },
 
     "go.lintTool": "golangci-lint",
@@ -72,9 +133,6 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.codeLens": true,
     "python.languageServer": "Default",
-    "vs-kubernetes": {
-        "vscode-kubernetes.minikube-path.mac": "/Users/i517616/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
-    },
     "explorer.confirmDelete": false,
     "files.exclude": {
         "**/.classpath": true,
