@@ -2,13 +2,13 @@
 
 source $argv[1]/scripts/common.fish
 
-if test -f /Library/Fonts/"Roboto Mono Nerd Font Complete.ttf"
-    info_installation_skipped "font 'Roboto Mono Nerd Font Complete.ttf'"
+if test -f /Library/Fonts/"RobotoMonoNerdFont-Regular.ttf"
+    info_installation_skipped "RobotoMonoNerdFont-Regular.ttf"
 else
-    curl -fLo /Library/Fonts/"Roboto Mono Nerd Font Complete.ttf" \
-        https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/RobotoMono/Regular/complete/Roboto%20Mono%20Nerd%20Font%20Complete.ttf \
+    curl -fLo /Library/Fonts/"RobotoMonoNerdFont-Regular.ttf" \
+        https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/RobotoMono/Regular/RobotoMonoNerdFont-Regular.ttf \
         &>/dev/null
-    info_installation_complete "font 'Roboto Mono Nerd Font Complete.ttf'"
+    info_installation_complete "RobotoMonoNerdFont-Regular.ttf"
 end
 
 if test -f ~/Library/"Application Support"/iTerm2/DynamicProfiles/natural-fish.json
