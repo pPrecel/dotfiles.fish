@@ -9,4 +9,11 @@ else
     info_installation_complete 'tpm'
 end
 
+if test -d ~/.tmux/plugins/tmux-natural
+    info_installation_skipped 'tmux-natural'
+else
+    git clone -q https://github.com/pPrecel/tmux-natural ~/.tmux/plugins/tmux-natural
+    info_installation_complete 'tmux-natural'
+end
+
 lnWithBackup $argv[1]/tmux/.tmux.conf $HOME/.tmux.conf
