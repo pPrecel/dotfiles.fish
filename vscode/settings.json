@@ -130,6 +130,17 @@
     "go.experimentalWorkspaceModule": true,
     "go.enableCodeLens": {},
 
+    "todo-tree.highlights.backgroundColourScheme": [
+        "#ffa112",
+        "#567d36"
+    ],
+    "todo-tree.highlights.foregroundColourScheme": [
+        "#252526"
+    ],
+    "todo-tree.highlights.useColourScheme": true,
+    "todo-tree.tree.flat": true,
+    "todo-tree.tree.groupedByTag": true,
+
     "diffEditor.ignoreTrimWhitespace": false,
     "diffEditor.codeLens": true,
     "python.languageServer": "Default",
@@ -146,8 +157,8 @@
     "explorer.confirmDragAndDrop": false,
     "workbench.statusBar.visible": true,
     "redhat.telemetry.enabled": true,
-    "window.zoomLevel": 1,
     "[python]": {
         "editor.formatOnType": true
-    }
+    },
+    "window.zoomLevel": 1
 }
