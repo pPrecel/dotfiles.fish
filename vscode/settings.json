@@ -117,18 +117,42 @@
     "go.lintFlags": [
         "--fast"
     ],
-    "go.vetOnSave": "package",
-    "go.buildOnSave": "off", 
+    "go.vetOnSave": "workspace",
     "go.testOnSave": false,
-    "go.autocompleteUnimportedPackages": true, 
     "go.useLanguageServer": true,
     "go.testFlags": [
         "-v"
     ],
     "go.formatTool": "goimports",
     "go.toolsManagement.autoUpdate": true,
-    "go.experimentalWorkspaceModule": true,
     "go.enableCodeLens": {},
+    "go.disableConcurrentTests": true,
+    "gopls": {
+        "ui.diagnostics.staticcheck": true,
+        "ui.diagnostic.analyses":{
+            "nilness": true,
+            "shadow": true,
+            "unusedparams": true,
+            "unusedvariable": true,
+            "useany": true
+        }
+    },
+    "go.coverOnSingleTest": true,
+    "go.coverOnSingleTestFile": true,
+    "go.coverOnTestPackage": true,
+    "go.coverageDecorator": {
+        "type": "highlight",
+        "coveredHighlightColor": "#09ff001c",
+        "uncoveredHighlightColor": "rgba(128,64,64,0.25)",
+        "coveredBorderColor": "#09ff001c",
+        "uncoveredBorderColor": "rgba(128,64,64,0.25)",
+    },
+    "go.coverageOptions": "showBothCoveredAndUncoveredCode",
+    "go.delveConfig":{
+        "showGlobalVariables": true
+    },
+    "go.diagnostic.vulncheck":"Imports",
+    "go.lintOnSave": "workspace",
 
     "todo-tree.highlights.backgroundColourScheme": [
         "#ffa112",
@@ -152,13 +176,11 @@
         "**/.factorypath": true
     },
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "java.home": "/Library/Java/JavaVirtualMachines/temurin-16.jdk/Contents/Home",
     "explorer.confirmDragAndDrop": false,
     "workbench.statusBar.visible": true,
     "redhat.telemetry.enabled": true,
     "[python]": {
         "editor.formatOnType": true
     },
-    "window.zoomLevel": 1
+    "window.zoomLevel": 2
 }
