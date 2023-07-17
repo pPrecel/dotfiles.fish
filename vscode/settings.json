@@ -149,7 +149,7 @@
     },
     "go.coverageOptions": "showBothCoveredAndUncoveredCode",
     "go.delveConfig":{
-        "showGlobalVariables": true
+        "showGlobalVariables": false
     },
     "go.diagnostic.vulncheck":"Imports",
     "go.lintOnSave": "workspace",
@@ -181,6 +181,5 @@
     "redhat.telemetry.enabled": true,
     "[python]": {
         "editor.formatOnType": true
-    },
-    "window.zoomLevel": 2
+    }
 }

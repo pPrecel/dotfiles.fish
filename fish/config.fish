@@ -17,6 +17,7 @@ set -g fish_user_paths $fish_user_paths "/usr/local/opt/tcl-tk/bin"
 set -g fish_user_paths $fish_user_paths "/opt/homebrew/bin"
 set -g fish_user_paths $fish_user_paths "$HOME/.rd/bin"
 set -g fish_user_paths $fish_user_paths "$HOME/.krew/bin"
+set -g fish_user_paths $fish_user_paths "$HOME/.local/bin/"
 
 alias ls='lsd'
 alias grep='rg'
