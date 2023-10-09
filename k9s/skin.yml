@@ -1,0 +1,87 @@
+
+### colors
+# 2c2c2c = black (bright)
+# 3b3d39 = gray
+# 535353 = gray (bright)
+# 507f29 = green
+# 81b622 = green (bright)
+# ffa112 = orange
+# bab7b7 = white
+# ffffff = white (bright)
+# ff0000 = red
+# dc3936 = red (bright)
+# 26c6da = cyan
+
+k9s:
+  # General K9s styles
+  body:
+    fgColor: '#535353'
+    bgColor: '#3b3d39'
+    logoColor: '#507f29'
+
+  # ClusterInfoView styles
+  info:
+    fgColor: '#81b622'
+    sectionColor: '#507f29'
+
+  # Frame styles
+  frame:
+    # Borders styles
+    border:
+      fgColor: '#81b622'
+      focusColor: '#507f29'
+
+    # MenuView attributes and styles
+    menu:
+      fgColor: '#ffffff'
+      keyColor: '#bab7b7'
+      # Used for favorite namespaces
+      numKeyColor: '#ffa112'
+
+    # CrumbView attributes for history navigation.
+    crumbs:
+      fgColor: '#2c2c2c'
+      bgColor: '#535353'
+      activeColor: '#ffa112'
+
+    # Resource status and update styles
+    status:
+      newColor: '#bab7b7'
+      modifyColor: '#ffa112'
+      addColor: '#ffa112'
+      errorColor: '#ff0000'
+      highlightcolor: '#ffa112'
+      killColor: '#ff0000'
+      completedColor: '#535353'
+
+    # Border title styles.
+    title:
+      fgColor: '#ffffff'
+      bgColor: '#2c2c2c'
+      highlightColor: '#ffa112'
+      counterColor: '#ffa112'
+      filterColor: '#ffa112'
+
+  # Specific views styles
+  views:
+    # TableView attributes.
+    table:
+      fgColor: '#ffa112'
+      bgColor: '#2c2c2c'
+      cursorColor: '#ffa112'
+      # Header row styles.
+      header:
+        fgColor: '#ffffff'
+        bgColor: '#507f29'
+        sorterColor: '#ffa112'
+
+    # YAML info styles.
+    yaml:
+      keyColor: '#26c6da'
+      colonColor: '#26c6da'
+      valueColor: '#ffffff'
+
+    # Logs styles.
+    logs:
+      fgColor: '#ffffff'
+      bgColor: '#3b3d39'

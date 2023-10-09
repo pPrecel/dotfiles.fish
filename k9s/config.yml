@@ -1,0 +1,33 @@
+k9s:
+  refreshRate: 2
+  maxConnRetry: 5
+  enableMouse: true
+  headless: false
+  logoless: false
+  crumbsless: false
+  readOnly: false
+  noExitOnCtrlC: false
+  noIcons: false
+  skipLatestRevCheck: false
+  logger:
+    tail: 100
+    buffer: 5000
+    sinceSeconds: 300
+    fullScreenLogs: false
+    textWrap: false
+    showTime: false
+  currentContext: k3d-kyma
+  currentCluster: k3d-kyma
+  clusters:
+    k3d-kyma:
+      namespace:
+        active: all
+        lockFavorites: false
+        favorites:
+        - all
+        - default
+        - kyma-system
+        - kcp-system
+      view:
+        active: pod
+

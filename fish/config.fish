@@ -9,6 +9,8 @@ set -gx ISTIOCTL_PATH (which istioctl)
 
 set -gx EDITOR (which vim)
 
+set -gx XDG_CONFIG_HOME "$HOME/.config"
+
 set -g fish_user_paths $fish_user_paths "$GOPATH/bin"
 set -g fish_user_paths $fish_user_paths "$HOME/google-cloud-sdk/bin"
 set -g fish_user_paths $fish_user_paths "$HOME/Library/Python/3.7/bin"
