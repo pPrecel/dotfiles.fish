@@ -1,7 +1,7 @@
 k9s:
   refreshRate: 2
   maxConnRetry: 5
-  enableMouse: true
+  enableMouse: false
   headless: false
   logoless: false
   crumbsless: false
@@ -30,4 +30,3 @@ k9s:
         - kcp-system
       view:
         active: pod
-
