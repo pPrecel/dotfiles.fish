@@ -1,87 +1,106 @@
 
 ### colors
-# 2c2c2c = black (bright)
-# 3b3d39 = gray
-# 535353 = gray (bright)
-# 507f29 = green
-# 81b622 = green (bright)
-# ffa112 = orange
-# bab7b7 = white
-# ffffff = white (bright)
-# ff0000 = red
-# dc3936 = red (bright)
-# 26c6da = cyan
+brightblack: &brightblack '#2c2c2c'
+gray: &gray '#3b3d39'
+brightgray: &brightgray '#535353'
+green: &green '#507f29'
+brightgreen: &brightgreen '#81b622'
+orange: &orange '#ffa112'
+white: &white '#bab7b7'
+brightwhite: &brightwhite '#ffffff'
+blue: &blue '#0883dd'
+red: &red '#ff0000'
+cyan: &cyan '#26c6da'
 
 k9s:
-  # General K9s styles
   body:
-    fgColor: '#535353'
-    bgColor: '#3b3d39'
-    logoColor: '#507f29'
-
-  # ClusterInfoView styles
+    fgColor: *brightwhite
+    bgColor: *gray
+    logoColor: *green
+  prompt:
+    fgColor: *brightgray
+    bgColor: *gray
+    suggestColor: *orange
   info:
-    fgColor: '#81b622'
-    sectionColor: '#507f29'
-
-  # Frame styles
+    fgColor: *brightgreen
+    sectionColor: *green
+  help:
+    fgColor: *brightwhite
+    bgColor: *brightgreen
+    keyColor: *white
+    numKeyColor: *orange
+    sectionColor: *green
+  dialog:
+    fgColor: *brightwhite
+    bgColor: *gray
+    buttonFgColor: *brightwhite
+    buttonBgColor: *gray
+    buttonFocusFgColor: *brightwhite
+    buttonFocusBgColor: *green
+    labelFgColor: *white
+    fieldFgColor: *orange
   frame:
-    # Borders styles
     border:
-      fgColor: '#81b622'
-      focusColor: '#507f29'
-
-    # MenuView attributes and styles
+      fgColor: *brightgreen
+      focusColor: *green
     menu:
-      fgColor: '#ffffff'
-      keyColor: '#bab7b7'
-      # Used for favorite namespaces
-      numKeyColor: '#ffa112'
-
-    # CrumbView attributes for history navigation.
+      fgColor: *brightwhite
+      keyColor: *white
+      numKeyColor: *orange
     crumbs:
-      fgColor: '#2c2c2c'
-      bgColor: '#535353'
-      activeColor: '#ffa112'
-
-    # Resource status and update styles
+      fgColor: *brightblack
+      bgColor: *brightgray
+      activeColor: *orange
     status:
-      newColor: '#bab7b7'
-      modifyColor: '#ffa112'
-      addColor: '#ffa112'
-      errorColor: '#ff0000'
-      highlightcolor: '#ffa112'
-      killColor: '#ff0000'
-      completedColor: '#535353'
-
-    # Border title styles.
+      newColor: *white
+      modifyColor: *orange
+      addColor: *orange
+      errorColor: *red
+      highlightcolor: *orange
+      killColor: *red
+      completedColor: *brightgray
     title:
-      fgColor: '#ffffff'
-      bgColor: '#2c2c2c'
-      highlightColor: '#ffa112'
-      counterColor: '#ffa112'
-      filterColor: '#ffa112'
-
-  # Specific views styles
+      fgColor: *brightwhite
+      bgColor: *brightblack
+      highlightColor: *orange
+      counterColor: *orange
+      filterColor: *orange
   views:
-    # TableView attributes.
+    charts:
+      bgColor: default
+      defaultDialColors:
+        - *blue
+        - *red
+      defaultChartColors:
+        - *blue
+        - *red
     table:
-      fgColor: '#ffa112'
-      bgColor: '#2c2c2c'
-      cursorColor: '#ffa112'
-      # Header row styles.
+      fgColor: *brightwhite
+      bgColor: *brightblack
+      cursorColor: *orange
+      cursorBgColor: *white
+      markColor: *cyan
       header:
-        fgColor: '#ffffff'
-        bgColor: '#507f29'
-        sorterColor: '#ffa112'
-
-    # YAML info styles.
+        fgColor: *brightwhite
+        bgColor: *green
+        sorterColor: *orange
+    xray:
+      fgColor: *white
+      bgColor: *brightblack
+      cursorColor: *green
+      graphicColor: *green
+      showIcons: true
     yaml:
-      keyColor: '#26c6da'
-      colonColor: '#26c6da'
-      valueColor: '#ffffff'
+      keyColor: *cyan
+      colonColor: *cyan
+      valueColor: *brightwhite
 
     # Logs styles.
     logs:
-      fgColor: '#ffffff'
-      bgColor: '#3b3d39'
+      fgColor: *brightwhite
+      bgColor: *gray
+      indicator:
+        fgColor: *white
+        bgColor: *green
+        toggleOnColor: *orange
+        toggleOffColor: *white
