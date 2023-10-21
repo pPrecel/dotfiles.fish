@@ -7,7 +7,7 @@ on:
     - cron:  '0 8 * * 1'
 jobs:
   integration-test:
-    name: Full scenario
+    name: Check dependencies
     runs-on: macos-latest
     steps:
       - name: Checkout
@@ -17,15 +17,8 @@ jobs:
           echo "brew configuration"
           echo $(brew list)
           brew update
-          brew install vim git fish
-          brew install tmux
-          brew remove go
-          rm /usr/local/bin/go
-          rm /usr/local/bin/gofmt
+          brew install fish
           brew install --cask visual-studio-code
-          git config --global user.name testname
-          git config --global user.email testmail
       - name: Bootstrap
         run: |
-          fish scripts/bootstrap.fish
-      
+          fish tests/deps.fish 
