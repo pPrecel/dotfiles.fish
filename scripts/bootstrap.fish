@@ -100,7 +100,7 @@ make 'brew cask'
 	or abort 'brew cask'
 
 make 'brew custom'
-	and brew_install 'brew_github'
+	and brew_install 'brew_custom'
 	and success 'brew custom'
 	or abort 'brew custom'
 
