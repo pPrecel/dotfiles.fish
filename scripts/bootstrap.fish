@@ -99,6 +99,11 @@ make 'brew cask'
 	and success 'brew cask'
 	or abort 'brew cask'
 
+make 'brew custom'
+	and brew_install 'brew_github'
+	and success 'brew custom'
+	or abort 'brew custom'
+
 make 'fisher'
 	and install_fisher
 	and success 'fisher'

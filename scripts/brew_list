@@ -29,6 +29,3 @@ k3d
 k9s
 kustomize
 istioctl
-bfontaine/utils/rfc
-pPrecel/tap/cloudagent
-pPrecel/tap/pkup-gen
