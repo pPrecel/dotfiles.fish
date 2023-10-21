@@ -13,3 +13,8 @@ lnWithBackup $argv[1]/k9s/config.yml \
     $HOME/.config/k9s/config.yml
 
 info_installation_complete "config.yml"
+
+lnWithBackup $argv[1]/k9s/plugin.yml \
+    $HOME/.config/k9s/plugin.yml
+
+info_installation_complete "plugin.yml"

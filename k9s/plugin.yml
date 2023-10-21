@@ -1,0 +1,40 @@
+plugin:
+  serverless-flags:
+    shortCut: Shift-F
+    confirm: false
+    description: Custom flags
+    scopes:
+    - serverless
+    command: sh
+    background: false
+    args:
+    - -c
+    - |
+      isServer=$(kubectl get serverless $NAME -n $NAMESPACE --context $CONTEXT -ojsonpath='{.status.served}')
+      if [[ ${isServer} != "True" ]]; then
+        echo "serverless is not served"
+        sleep 5
+        exit 1
+      fi
+
+      kubectl get secret serverless-manifest-cache -n $NAMESPACE --context $CONTEXT -ojsonpath='{.data.spec}' \
+        | base64 -d | jq -r '.CustomFlags' | less
+  serverless-manifest:
+    shortCut: Shift-M
+    confirm: false
+    description: Manifest
+    scopes:
+    - serverless
+    command: sh
+    background: false
+    args:
+    - -c
+    - |
+      isServer=$(kubectl get serverless $NAME -n $NAMESPACE --context $CONTEXT -ojsonpath='{.status.served}')
+      if [[ ${isServer} != "True" ]]; then
+        echo "serverless is not served"
+        sleep 5
+        exit 1
+      fi
+
+      kubectl get secret serverless-manifest-cache -n $NAMESPACE --context $CONTEXT -ojsonpath='{.data.spec}' | base64 -d | jq -r '.Manifest' | less
