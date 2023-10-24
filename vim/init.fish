@@ -12,4 +12,5 @@ end
 
 lnWithBackup $argv[1]/vim/.vimrc $HOME/.vimrc
 
+mkdir -p $HOME/.config/nvim
 lnWithBackup $argv[1]/vim/init.vim $HOME/.config/nvim/init.vim
