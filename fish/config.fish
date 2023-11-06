@@ -81,4 +81,7 @@ and not set -q TMUX
     exec tmux
 end
 
+# set startup envs
+env | sort > $TMPDIR/env_$fish_pid
+
 exit
