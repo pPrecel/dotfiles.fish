@@ -26,9 +26,9 @@ To upgrade dotfiles, type the `git pull origin main` and then re-install all dot
 
 ## Preview
 
-![terminal](docs/iterm.png)
+![terminal](assets/iterm.png)
 
-![ide](docs/vscode.png)
+![ide](assets/vscode.png)
 
 ## Slack integration
 
