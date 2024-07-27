@@ -1,11 +1,11 @@
 #!/usr/bin/env fish
 
 set DOTFILES_ROOT (pwd -P)
-set STEP_PATH $DOTFILES_ROOT/install/fish
+set STEP_PATH $DOTFILES_ROOT/modules/fish
 set FISH_CONFIG "$HOME/.config/fish"
 source $DOTFILES_ROOT/lib/*
 
-set -l plugins (cat $DOTFILES_ROOT/install/fish/fisher_list)
+set -l plugins (cat $DOTFILES_ROOT/modules/fish/fisher_list)
 fisher install $plugins >/dev/null
     and info_installation_complete "fisher plugins"
     or abort "fisher plugins"

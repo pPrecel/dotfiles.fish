@@ -3,7 +3,7 @@
 set DOTFILES_ROOT (pwd -P)
 source $DOTFILES_ROOT/lib/lib.fish
 
-set BREW_INSTALL $DOTFILES_ROOT/install_pre/pkg_manager/brew.fish
+set BREW_INSTALL $DOTFILES_ROOT/pre_modules/pkg_manager/brew.fish
 
 # TODO: support linux
 make 'Update brew'

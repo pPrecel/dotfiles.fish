@@ -21,7 +21,7 @@ end
 set -l brew_list
 while read -la line
     set brew_list $brew_list $line
-end < $DOTFILES_ROOT/install_pre/pkg_manager/$file_name
+end < $DOTFILES_ROOT/pre_modules/pkg_manager/$file_name
 
 for val in $brew_list
     make "Installing $val..."

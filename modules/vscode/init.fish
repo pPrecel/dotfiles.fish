@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 
 set DOTFILES_ROOT (pwd -P)
-set STEP_PATH $DOTFILES_ROOT/install/vscode
+set STEP_PATH $DOTFILES_ROOT/modules/vscode
 source $DOTFILES_ROOT/lib/*
 
 if test -f /Library/Fonts/"DejaVuSansMNerdFont-Regular.ttf"

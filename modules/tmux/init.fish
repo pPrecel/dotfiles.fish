@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 
 set DOTFILES_ROOT (pwd -P)
-set STEP_PATH $DOTFILES_ROOT/install/tmux
+set STEP_PATH $DOTFILES_ROOT/modules/tmux
 source $DOTFILES_ROOT/lib/*
 
 if test -d ~/.tmux/plugins/tpm

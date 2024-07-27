@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 
 set DOTFILES_ROOT (pwd -P)
-set STEP_PATH $DOTFILES_ROOT/install/k9s
+set STEP_PATH $DOTFILES_ROOT/modules/k9s
 set K9S_CONFIG "$HOME/.config/k9s"
 source $DOTFILES_ROOT/lib/*
 

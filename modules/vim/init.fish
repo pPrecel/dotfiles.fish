@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 
 set DOTFILES_ROOT (pwd -P)
-set STEP_PATH $DOTFILES_ROOT/install/vim
+set STEP_PATH $DOTFILES_ROOT/modules/vim
 source $DOTFILES_ROOT/lib/*
 
 if test -f ~/.vim/autoload/plug.vim

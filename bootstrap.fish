@@ -17,7 +17,7 @@ make 'check prerequisites'
 	and success 'check prerequisites'
 	or abort "Install 'fish', 'git', 'vim', and 'brew' first"
 
-for init in install_pre/*/init.fish
+for init in pre_modules/*/init.fish
     set -l STEP_NAME $(basename $(dirname $init))
     make Configuring $STEP_NAME
         and run_with_prefix fish $init
@@ -25,7 +25,7 @@ for init in install_pre/*/init.fish
         or abort Aborted $STEP_NAME
 end
 
-for init in install/*/init.fish
+for init in modules/*/init.fish
     set -l STEP_NAME $(basename $(dirname $init))
     make Configuring $STEP_NAME
         and run_with_prefix fish $init

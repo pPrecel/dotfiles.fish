@@ -1,7 +1,7 @@
 #!/usr/bin/env fish
 
 set DOTFILES_ROOT (pwd -P)
-set STEP_PATH $DOTFILES_ROOT/install/iterm2
+set STEP_PATH $DOTFILES_ROOT/modules/iterm2
 source $DOTFILES_ROOT/lib/*
 
 if test -f /Library/Fonts/"RobotoMonoNerdFont-Regular.ttf"
