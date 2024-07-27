@@ -1,6 +1,8 @@
 #!/usr/bin/env fish
 
-source $argv[1]/scripts/common.fish
+set DOTFILES_ROOT (pwd -P)
+set STEP_PATH $DOTFILES_ROOT/install/tmux
+source $DOTFILES_ROOT/lib/*
 
 if test -d ~/.tmux/plugins/tpm
     info_installation_skipped 'tpm'
@@ -16,4 +18,4 @@ else
     info_installation_complete 'tmux-natural'
 end
 
-lnWithBackup $argv[1]/tmux/.tmux.conf $HOME/.tmux.conf
+lnWithBackup $STEP_PATH/.tmux.conf $HOME/.tmux.conf
