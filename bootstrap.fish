@@ -37,10 +37,10 @@ for init in pre_modules/*/init.fish
         or abort Aborted $STEP_NAME
 end
 
-# for init in modules/*/init.fish
-#     set -l STEP_NAME $(basename $(dirname $init))
-#     make Configuring $STEP_NAME
-#         and run_with_prefix fish $init
-#         and success Configured $STEP_NAME
-#         or abort Aborted $STEP_NAME
-# end
+for init in modules/*/init.fish
+    set -l STEP_NAME $(basename $(dirname $init))
+    make Configuring $STEP_NAME
+        and run_with_prefix fish $init
+        and success Configured $STEP_NAME
+        or abort Aborted $STEP_NAME
+end
